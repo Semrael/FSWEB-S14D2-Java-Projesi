@@ -5,12 +5,12 @@ import java.util.PrimitiveIterator;
 public class Lamp {
     private LampType style;
     private boolean battery;
-    private int globalRating;
+    private int globRating;
 
-    public Lamp(LampType style, boolean battery, int globalRating) {
+    public Lamp(LampType style, boolean battery, int globRating) {
         this.style = style;
         this.battery = battery;
-        this.globalRating = globalRating;
+        this.globRating = globRating;
     }
 
     public void turnOn(){
@@ -19,12 +19,12 @@ public class Lamp {
     public LampType getStyle() {
         return style;
     }
-     public boolean isBattery(boolean battery){
+     public boolean isBattery(){
         return this.battery;
      }
 
-    public int getGlobalRating() {
-        return this.globalRating;
+    public int getGlobRating() {
+        return this.globRating;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class Lamp {
         return "Lamp{" +
                 "style=" + style +
                 ", battery=" + battery +
-                ", globalRating=" + globalRating +
+                ", globalRating=" + globRating +
                 '}';
     }
 }

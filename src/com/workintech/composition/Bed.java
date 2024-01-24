@@ -1,22 +1,22 @@
 package com.workintech.composition;
 
 public class Bed {
-    private String Style;
+    private String style;
     private int pillows;
     private int height;
-    private int  sheets;
+    private int sheets;
     private int quilt;
 
     public Bed(String style, int pillows, int height, int sheets, int quilt) {
-        Style = style;
+        this.style = style;
         this.pillows = pillows;
         this.height = height;
         this.sheets = sheets;
         this.quilt = quilt;
     }
 
-    public void make(){
-        System.out.println("The bed is being made");
+    public void make() {
+        System.out.println("The bed is being made.");
     }
 
     public int getPillows() {
